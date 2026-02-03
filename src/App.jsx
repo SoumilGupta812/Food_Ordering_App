@@ -6,14 +6,16 @@ import { CartContextProvider } from "./components/store/CartContext";
 import { UserProgressContextProvider } from "./components/store/UserProgressContext";
 function App() {
   return (
-    <UserProgressContextProvider>
-      <CartContextProvider>
-        <Header />
-        <Meals />
-        <Cart />
-        <Checkout />
-      </CartContextProvider>
-    </UserProgressContextProvider>
+    <>
+      <UserProgressContextProvider>
+        <CartContextProvider>
+          <Header />
+          <Meals />
+          <Cart />
+          <Checkout />
+        </CartContextProvider>
+      </UserProgressContextProvider>
+    </>
   );
 }
 
